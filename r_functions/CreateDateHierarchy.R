@@ -9,7 +9,7 @@
 #' 
 #' @return A modified dataframe with new time-related columns.
 
-AddMonthYear <- function(data, date_column) {
+CreateDateHierarchy <- function(data, date_column) {
   
   # Check and then install/load libraries
   if (!require("pacman")) install.packages("pacman")
