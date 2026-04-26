@@ -4,7 +4,7 @@ authors:
 - family-names: "Dao"
   given-names: "Tran"
   orcid: "https://orcid.org/0009-0000-1203-0387"
-title: "RCraftToolbox: R Functions for data wrangling and common analysis"
+title: "RCraftToolbox: R functions for data wrangling and common analysis"
 version: 1.0.0
 date-released: 2026-04-25
 url: "https://github.com/daotran-rnd/da-materials"
