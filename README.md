@@ -1,9 +1,9 @@
 # 📦 RCraftToolbox: R functions for data wrangling and common analysis
 
-## About this project
+## About this project 🤔
 This project is a code library for data wrangling in general. 
 
-## Instruction
+## Instruction 🔖
 You can use function files from this github repo directly in your R environment without manually downloading the files, ensuring you are always working with the most up‑to‑date version of the code. 
 This instruction is designed to call functions in folder r_functions separately.
 
