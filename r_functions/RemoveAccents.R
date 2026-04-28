@@ -4,13 +4,13 @@
 #' Latin-ASCII equivalents. It is particularly helpful for cleaning names or 
 #' addresses in urban/demographic datasets to ensure system compatibility and standardization.
 #' E.g.: Convert value of "Hồ Chí Minh City" to "Ho Chi Minh City" in a column "CityName".
-#' 
 #' @author daotq
 #' 
 #' @param data A dataframe or tibble.
 #' @param target_column The unquoted column name containing accented text.
 #' 
 #' @return A modified dataframe with the target column converted to ASCII.
+#' @export
 
 RemoveAccents <- function(data, target_column) {
   
