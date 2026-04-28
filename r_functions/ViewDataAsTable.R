@@ -1,5 +1,4 @@
 #' @title Format data table for viewing
-#'
 #' @description
 #' Generates a stylized and interactive data table. 
 #' The function automatically standardizes column names to BigCamelCase, 
@@ -13,8 +12,9 @@
 #'     Defaults to 500.
 #' @param rows Numeric. The default number of rows to display per page. 
 #'     Defaults to 10.
-#'
 #' @return A `reactable` HTML widget object.
+#' @export 
+
 ViewDataAsTable <- function(data, height = 500, rows = 10) {
   
   # Setup 
