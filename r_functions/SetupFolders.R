@@ -4,7 +4,6 @@
 #' 
 #' @param base_path Character. The root directory where the project will be setup. Defaults to current working directory.
 #' @param extra_folders Character vector. Optional names of additional folders to create.
-#'
 #' @export
 
 SetupFolders <- function(base_path = getwd(), extra_folders = NULL) {
