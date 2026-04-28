@@ -1,10 +1,11 @@
 #' @title Convert Excel files to RData 
+#'
 #' @description Function to convert csv/xlsx/xls files in a folder to RData, 
-#' user inputs the folder path that stores the original files. 
-#' Rdata created will be stored in the same folder. 
-#' For csv, the output Rdata is named after the original file.
-#' For xlsx, it creates separate RData files for each sheet using the format: 
-#' "FileName_SheetName.RData".
+#'     user inputs the folder path that stores the original files. 
+#'     Rdata created will be stored in the same folder. 
+#'     For csv, the output Rdata is named after the original file.
+#'     For xlsx, it creates separate RData files for each sheet using the format: 
+#'     "FileName_SheetName.RData".
 #' @author daotq
 #'
 #' @param path Character. Directory path. If NULL, uses current working directory.
