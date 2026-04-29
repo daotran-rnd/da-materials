@@ -11,7 +11,7 @@
 #' @param path Character. Directory path. If NULL, uses current working directory.
 #' @export
 
-ConvertExcelFilesToRData <- function(path = NULL) {
+ConvertExcel2RData <- function(path = NULL) {
   
   # Setup
   if (!require("pacman")) install.packages("pacman")
