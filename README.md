@@ -18,11 +18,13 @@ CallRCraftToolbox <- function(file) {
     file)) }
 ```
 ### Step 2️⃣: Add name of a specific function to call it
-Example:
+
+For example, you want to use function `CreateDateHierarchy()` from this library to add YYYY-MM column, here is how to call this function:
+
 ```R
 CallRCraftToolbox("CreateDateHierarchy.R")
 ```
-Now the function `CreateDateHierarchy()` is available in the functions list of your R environment. 
+Now the function `CreateDateHierarchy()` is available in your R environment. 
 
 ### Step 3️⃣: Use the function for its designated purpose 
 Example: We have a dataset `bike_sales` and there is a column called `OrderDate`. 
