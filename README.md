@@ -50,7 +50,7 @@ Kindly read description in each R function to know parameters to input.
 **Batch 2: Load and save data**
   *	LoadDatasets 
   *	LoadExcelSheets 
-  *	ConverExcel2RData
+  *	ConvertExcel2RData
   *	SaveAll2RData
   *	SaveData
 
