@@ -45,6 +45,7 @@ Kindly read description in each R function to know parameters to input.
   *	CleanRWorkspace
   *	CleanNonFunctions
   *	MemoryProfiler
+  *	FunctionHelp
 
 **Batch 2: Load and save data**
   *	LoadDatasets 
