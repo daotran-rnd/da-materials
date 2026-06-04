@@ -9,10 +9,10 @@
 #' @param path Character string. The base URL path to the folder
 #'   containing the `.R` files in your GitHub repository.
 #' @example To view document of function JoinData in RCraftToolbox, type as follows
-#' FunctionHelp("JoinData",
-#'              "https://raw.githubusercontent.com/daotran-rnd/da-materials/main/r_functions/")
+#' FunctionHelp("JoinData")
 
-FunctionHelp <- function(function_name, path) {
+FunctionHelp <- function(function_name, 
+                         path =  "https://raw.githubusercontent.com/daotran-rnd/da-materials/main/r_functions/" ) {
 
   url <- paste0(path, function_name, ".R")
 
