@@ -17,8 +17,11 @@ SetupFolders <- function(base_path = getwd(), extra_folders = NULL) {
     "data",
     file.path("data", "data_raw"),
     file.path("data", "data_processed"),
+    file.path("data", "data_backup"),
     "scripts",
-    "visuals",
+    "charts",
+    "maps",
+    "screenshots",
     "reports"
   )
   
