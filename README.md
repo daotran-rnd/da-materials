@@ -42,6 +42,7 @@ Kindly read description in each R function to know parameters to input.
   *	SetupRProjectHere
   *	SetupFolders
   *	SetupRLibraries
+  *	SetWD2Script
   *	CleanRWorkspace
   *	CleanNonFunctions
   *	MemoryProfiler
