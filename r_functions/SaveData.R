@@ -13,7 +13,7 @@
 #' @examples
 #'   SaveData(mtcars, "cars.csv")
 #'   SaveData(mtcars, "cars.xlsx")
-#'   SaveData(mtcars, "cars.Rdata")
+#'   SaveData(mtcars, "cars.RData")
 #' @export
 
 SaveData <- function(data, path) {
@@ -30,7 +30,6 @@ SaveData <- function(data, path) {
          "xlsx"   = writexl::write_xlsx(data, path),
          "rds"    = saveRDS(data, path),
          "RData"  = save(data, file = path),
-         "Rdata"  = save(data, file = path),
          "json"   = jsonlite::write_json(data, path, pretty = TRUE),
          "parquet"= arrow::write_parquet(data, path),
          stop("Unsupported file type: ", ext)
