@@ -30,6 +30,7 @@ SaveData <- function(data, path) {
          "xlsx"   = writexl::write_xlsx(data, path),
          "rds"    = saveRDS(data, path),
          "RData"  = save(data, file = path),
+         "Rdata"  = save(data, file = path),
          "json"   = jsonlite::write_json(data, path, pretty = TRUE),
          "parquet"= arrow::write_parquet(data, path),
          stop("Unsupported file type: ", ext)
