@@ -17,24 +17,29 @@
 #' @export
 
 SaveData <- function(data, path) {
-
+  
   # Setup
   if (!require("pacman")) install.packages("pacman")
   pacman::p_load(readr, writexl, jsonlite, arrow)
-
-  ext <- tools::file_ext(path)
-  ext <- tolower(ext)
+  
+  ext <- tolower(tools::file_ext(path))
+  
+  # Get name
+  var_name <- deparse(substitute(data))
   
   # Save files
   switch(ext,
          "csv"     = readr::write_csv(data, path),
          "xlsx"    = writexl::write_xlsx(data, path),
          "rds"     = saveRDS(data, path),
-         "rdata"   = save(data, file = path),   
+         "rdata"   = {
+           assign(var_name, data)
+           save(list = var_name, file = path)
+         },
          "json"    = jsonlite::write_json(data, path, pretty = TRUE),
          "parquet" = arrow::write_parquet(data, path),
          stop("Unsupported file type: ", ext)
   )
   
-  message(">>> Data saved to ", path)
+  message(">>> Data saved to ", path, " (object name: ", var_name, ")")
 }
