@@ -21,7 +21,7 @@ SetupRLibraries <- function() {
   # Define the list of core libraries
   libs <- c(
     "tidyverse", "readr", "dplyr", "tidyr", "magrittr", # Core packages
-    "stringi", "janitor", "lubridate", "zoo",           # Cleaning and Transformation
+    "stringi", "janitor", "lubridate", "zoo", "rlang",  # Cleaning and Transformation
     "plotly", "highcharter", "echarts4r", "ggplot2",    # Visualization
     "readr", "readxl", "writexl" , "zip")               # Load and Export
   
