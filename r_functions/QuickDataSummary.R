@@ -3,8 +3,8 @@
 #' @description This function provides a detailed overview of structure of a dataframe.  
 #' For each column, it calculates the data type, number of unique values, 
 #' count and percentage of missing values (NA), and basic descriptive statistics 
-#' (Min, Max, Mean, SD) for numeric variables.
-#' @author daotq
+#' (Min, Max, Mean, Median, SD) for numeric variables.
+#' @author daotq, anh2bao, nganbao
 #'
 #' @param data A dataframe or tibble to be summarized.
 #' @export
@@ -24,7 +24,8 @@ QuickDataSummary <- function(data) {
       Perc_NA = round(sum(is.na(.x)) / length(.x) * 100, 2),
       Min =  if(is.numeric(.x)) min(.x, na.rm = TRUE) else NA,
       Max =  if(is.numeric(.x)) max(.x, na.rm = TRUE) else NA,
-      Avg = if(is.numeric(.x)) round(mean(.x, na.rm = TRUE), 2) else NA ,
+      Avg = if(is.numeric(.x)) round(mean(.x, na.rm = TRUE), 2) else NA,
+      Median = if(is.numeric(.x)) round(median(.x, na.rm = TRUE), 2) else NA,
       SD =   if(is.numeric(.x)) sd(.x, na.rm = TRUE) else NA,
     ), .id = "Variable")
 }
