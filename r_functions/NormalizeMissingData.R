@@ -1,4 +1,4 @@
-#' @title Smart Clean Numeric and Standardize Dataframe
+#' @title Format Numeric and Normalize Missing Value
 #'
 #' @description 
 #' Automatically detects data input type (file path or existing dataframe), 
@@ -12,7 +12,8 @@
 #' @param na_strings A character vector of noisy strings to be converted to NA. Defaults to c("ERROR", "UNKNOWN", "N/A", "", "NULL", "-").
 #' @return A cleaned dataframe/tibble. As a side effect, assigns 'DataframeCleaned' to the Global Environment.
 #' @export
-SmartCleanData <- function(data_input, na_strings = c("ERROR", "UNKNOWN", "N/A", "", "NULL", "-")) {
+
+NormalizeMissingData <- function(data_input, na_strings = c("ERROR", "UNKNOWN", "N/A", "", "NULL", "-")) {
   
   # 1. Input Validation & Reading
   if (is.data.frame(data_input)) {
