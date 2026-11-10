@@ -23,7 +23,8 @@ SetupRLibraries <- function() {
     "tidyverse", "dplyr", "tidyr", "magrittr",          # Core packages
     "stringi", "janitor", "lubridate", "zoo", "rlang",  # Cleaning and Transformation
     "plotly", "highcharter", "echarts4r", "ggplot2",    # Visualization
-    "readr", "readxl", "writexl" , "zip")               # Load and Export
+    "readr", "readxl", "writexl" , "zip",               # Load and Export
+    "targets", "here" )                                 # Project Opt 
   
   # Notify user of the start
   message(">>> [", format(start_time, "%H:%M:%S"), "] Loading core R libraries...")
